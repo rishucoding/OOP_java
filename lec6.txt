@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------------
+Classes and Objects
+--------------------------------------------------------------------------------------
+
+1. Array: 2 step process. 
+   $  eg: int months[]; //one d array
+    // no actual array is present.. value of months is set to *NULL*
+
+    Now, to make a physical array.. like having a size. 
+    we use the *new* operator. (it reserves some space in memory)
+    $ months = new int[100];
+
+
+    $ combining: int months = new int[100];
+    NOTE: all elements in this array are initialized to 0 .. huii.
+
+    $ initialize in one statement : int months[] = {45,45,4,5,65,656,56,5,65,6,4};
+        >> no need to specialize the size .. nice
+        >> no need to use the new operator. 
+
+    $ multi dimen array
+        eg: int twoD[][] = new int[4][5];//[row][colm];
+        
+        We can do one special thing: only specify the row size
+        eg: int twoD[][] = new int[4][];
+
+    $ we can have array of arrays: check the figure: (  :) ) 
+    eg: int twoD[][] = new int[4][];
+        twoD[0] = new int[1];
+        twoD[1] = new int[4];
+
+
+    $ some same thingyyy : int a1[] = int[] a1.. in the array declaration syntax :) 
+
+2. Classes: a blueprint
+
+    quick q: $ contains data, code operating the data, or both.
+             $ declaring a class
+    
+             $ eg: 
+             class classkanaam {
+                 
+                   //bunch of variables(data)
+                   //bunch of methods(code)            
+                   // above are members  
+                 }
+
+             $  main () // method, should be public static
+                not every class need to have main()// specified in the class which is starting point
+
+             $ a simple eg: 
+                clas Box{
+                    
+                    double width;
+                    double height;
+                    double length;
+                    
+                    } // a new class ; a new data type :) 
+                    // creating a template.. not an actual instance or object
+
+             $ to create an object: 
+                Box mybox = new Box(); //new will reserve some memory .. hehe
+
+                // every object will have its owm copy of the instance variables present in class.
+                // dot operator used to access the data present in object    
+                eg: mybox.width = 50;
+                    mybox.height = 450;
+                    mybox.length = 1000;
+
+             >>>> refer to BoxDemo.java <<<<
+            
+            $ which name to choose for file name? Box or BoxDemo? ? (why to thinK? when having 
+            multiple classes in a single file)
+             >> IMP: if there is public class BoxDemo.. then this should be the file name. 
+
+            $ NOTE :the default access specifier is *package-private*
+            $ making a object : 
+                eg: Box mybox = new Box ();
+                or Box mybox ;
+                   mybox = new Box();
+
+            $ new oPerator : dynamically allocates memory for an object.
+            $ when an object is created.. a specil function is invoked by default .. this is waht? 
+
+            *Construtor*
+
+            $ Java provides a default constructor. // zero values . .hhaa
+
+            $ What about new keyword with primitive types??? like int a = new int(); lol 
+                        Because .. primitive types are not treated as objects.. as objects are 
+                        heavy for compiler. Why heavY? as obj have featues and attributes .. Ohww
+
+            $ During *runtime* .. the memory is allocated.            
+             
+3. Object Reference Variables
+            
+            $ eg: 
+                Box b1 = new Box();// object created
+                Box b2 = b1; // no new object is created. b2 points to the same location as b1
+
+                )(  Thing to remember )( 
+
+4. Methods : format: 
+            $ type name(parameter list){
+                
+                //body
+                }
+             >>>> refer to BoxDemo2.java <<<<
+            
+            $ calling methods using the same dot operator. 
+
+            $ method with parameters.. 
+            $ parameters vs arguments .. the calle has arguments .. which the declaration has para
+
+            >>>> refer to BoxDemo3.java <<<< 
