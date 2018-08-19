@@ -112,4 +112,23 @@ Classes and Objects
             $ method with parameters.. 
             $ parameters vs arguments .. the calle has arguments .. which the declaration has para
 
-            >>>> refer to BoxDemo3.java <<<< 
+            >>>> refer to BoxDemo3.java <<<<
+
+
+--------------------------------------------------------------------------------------------------
+Checking the programs
+--------------------------------------------------------------------------------------------------
+NOTE: all programs available at https://github.com/mmadil/java/blob/master
+1. BoxDemo1.java
+    $ note there are two classes present
+    $ when you do: "javac BoxDemo1.java", two bytecode gets generated .. Why? 
+    .. as both classes gets compiled and ... we have their bytecode
+    $ try to do "java Box" and "java BoxDemo"... getting error in the former.. Why? 
+            # because there is not main method present there.. 
+
+2. BoxDemo2.java
+    $ idea is to create multiple objects .. and they are independent .. own features
+
+3. BoxDemo3.java
+    $ get rid of calculating volume in the main function.. fix this with function in class
+
