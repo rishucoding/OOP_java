@@ -1,0 +1,53 @@
+# Note: whenever an object is created.. the instance variables are initialized
+to default varaibles  -> then constructor is called to do initialization(defaut
+or yours)
+
+
+
+---------------------------
+overloading methods
+---------------------------
+    $ overloading resolution: java first looks for an exact match between the
+    arguments and methods: number and type
+
+    >>> "java code OverloadDemo.java" <<<
+
+    eg: in the main method: 
+        ob.test();
+        ob.test(10);
+        ob.test(10,20);
+
+
+    # possilbe lossy converion from float to int. ERROR 
+    # automatic type casting happens from lower byte to higer.. like int to floa
+
+    $ Box class with overloaded constructors. 
+
+------------------------------
+Objects as Parameters
+-----------------------------
+
+    $ in code, a function inside test class.. which does the equal comparision. 
+    
+        >>> check the code <<<
+
+    $ a class's constructor calling it's own object .. 
+        creating a clone of same object 
+        
+        >>> check the code <<< 
+
+-----------------------------
+Argument passing 
+-----------------------------
+    
+    $ in java : primitive type: is call by value
+    $ objects type: is call by reference 
+
+-----------------------------
+Returning Objects 
+-----------------------------
+
+
+
+
+
