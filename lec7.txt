@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------
+Constructos 
+-------------------------------------------------------------------------------
+Why do we need them? 
+    $ we can't initialize the values of instance variables.. as the compiled code will have
+    these fixed values.
+
+    $ we can create a function .. which needs to be called everytime after object is created.
+
+    $ Better to invoke the function automatically! :) 
+
+    eg: 
+        Box() {
+            
+            System.out.println("doing something");
+            this.width = 10;
+            this.height = 20;
+            this.length = 43;            
+            
+            }
+
+        Box mybox = new Box();//this automatically calls the constructor
+
+
+# Difference between constructor and method? 
+    $ C's name same as class name. 
+    $ C's don't have a return type 
+
+# syntax: classname class-var = new classname();
+                                    ------------
+                                    Here we specify which constructor to call? 
+
+# There is something as default constructor provided by java.. 
+    And a table in ppt ... stating the default values:
+
+# *this* keyword refers to the current object. 
+# scope of variable is to be checked
+
+# Why? as local variables and parameters to method can have the same name as class's instance
+variables.. so using this keyword to resolve name-space collisions.
+
+# We get error like "
+BoxDemo.java:17: error: constructor Box in class Box cannot be applied to given types;
+        Box mybox = new Box();//here memory is assignd for obj
+                            ^
+                            required: double,double,double
+                            found: no arguments
+                            reason: actual and formal argument lists differ in length
+                            1 error
+
+"
+
+when we don't pass the arguments correctly while defining object.
+
+
+
+2. Garbage Collection: 
+
+    $ java handles deallocation automatically using this
+    $ in java, objects are dynamically allocated by the new operator. 
+    $ Question is: "How objects are destroyed and memory is released for future reallocation?"
+    
+    $ eg: Box mybox1 = new Box();
+          Box mybox2 = new Box();
+          mybox1 = mybox2; // here mybox1 gets available for garbage collection.
+
+3. Overloading methods:
+    $ flexibility to have tow or methods within a class can have the same name.. condtion: 
+        parameters are different in terms of count or type.
